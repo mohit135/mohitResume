@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mohit's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .row{
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+.centeral{text-align:center!important}
+.w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+  </style>
+</head>
+<body>
+ 
+<div class="container">
+<div class="jumbotron w3-teal">
+    <h1>Mohit Mishra</h1>      
+    <p>A creative dynamic IT professional having good knowledge in enterprise Java technologies and front-end web design.</p>
+  </div>
+  <div class = "row">
+  <div class="col-md-4">
+  <div class= "card">
+    <img class="card-img-top" src="mohit.jpg" alt="Card image" 	>
+    <div class="card-body">
+      <h4 class="card-title">Mohit Mishra</h4>
+	      <p><i class="fa fa-briefcase fa-fw"></i>&nbsp Full Stack Developer</p>
+          <p><i class="fa fa-home fa-fw"></i>&nbsp India, Pune</p>
+          <p><i class="fa fa-envelope fa-fw"></i>&nbsp mohitmishra135@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw"></i>&nbsp 7066352163</p>
+    </div>
+	</div>
+  </div>
+  
+  <div class="col-md-8">
+    <div class="card">
+	<div class="card-body">
+      <h4><i class="fa fa-briefcase fa-fw"></i>&nbsp&nbsp Application Developer at BNY Mellon Technology
+  		<ul>&nbsp July 2015 - Present</ul>
+	      <h5><b>Performance Report for Burgiss in Nexen</b></h5>
+          <h6><i class="fa fa-calendar fa-fw"></i> Feb 2017 - Current</h6>
+          <p>Burgiss is a BNY Mellon client. The clients
+			of Burgiss are asset owners, asset managers or
+			financial intermediaries. We are developing widgets
+			that are showing the performance of a particular
+			portfolio over the years graphically by using
+			HighCharts.This performance tool is helping the
+			clients to visualize the data and there by helping
+			them to take better decisions.</p>
+          <hr>
+		  
+		  <div>
+          <h5><b>Car Pooling Portal</b></h5>
+          <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2016 - Jan 2017</h6>
+          <p>CSR team of bny mellon technology has developed a car pooling
+			service which is useful for employees of the
+			company to reduce the traveling cost.</p>
+          <hr>
+        </div>
+		  
+		  <h5><b>Virtual Stock Market And Portfolio Gaming</b></h5>
+          <h6><i class="fa fa-calendar fa-fw"></i> Dec 2015 - Mar 2016</h6>
+          <p>NSE Stock Gaming is a full-fledged Java based web application used for Portfolio Management
+		  which included buying and selling of stocks at market price, viewing of high staked stocks, 
+		  etc.</p>
+          
+    </div>
+	</div>
+  </div>
+  
+  
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="card">
+			<div id="container"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+	<div class="card">
+	<h2>Education</h2>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Institute</th>
+        <th>Attended Years</th>
+        <th>Degree</th>
+		<th>CGPA/Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>KIIT School of Technology</td>
+        <td>2011 - 2015</td>
+        <td>B.Tech in Computer Sceince and Technology</td>
+		<td>84 %</td>
+      </tr>
+      <tr>
+        <td>D.A.V Public School, Dhanbad</td>
+        <td>2009 - 2010</td>
+        <td>Class 12, AISSCE</td>
+		<td>81 %</td>
+      </tr>
+      <tr>
+        <td>D.A.V Public School, Dhanbad</td>
+        <td>2007 - 2008</td>
+        <td>Class 10, AISSE</td>
+		<td>94 %</td>
+      </tr>
+    </tbody>
+  </table>
+	</div>
+	</div>
+</div>
+
+<div class="centeral w3-teal">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Developed By Mohit</p>
+</div>
+  
+  </div>
+
+  
+ 
+
+</body>
+<script>
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Technologies worked on'
+    },
+    subtitle: {
+        text: '(Please click the bars to know more)'
+    },
+    xAxis: {
+        type: 'category'
+    },
+    yAxis: {
+        title: {
+            text: 'Ratings '
+        }
+
+    },
+    legend: {
+        enabled: false
+    },
+    plotOptions: {
+        series: {
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                format: '{point.y:.1f}%'
+            }
+        }
+    },
+
+    tooltip: {
+        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+    },
+
+    series: [{
+        name: 'Technology',
+        colorByPoint: true,
+        data: [{
+            name: 'Java',
+            y: 80,
+            drilldown: 'java'
+        }, {
+            name: 'Javascript',
+            y: 70,
+            drilldown: 'javascript'
+        }, {
+            name: 'HTML & CSS',
+            y: 70,
+            drilldown: 'html'
+        }]
+    }],
+    drilldown: {
+        series: [{
+            name: 'Java',
+            id: 'java',
+           data: [
+				[
+                    'Core Java',
+                    80
+                ],
+                [
+                    'Servlets & JSP',
+                    70
+                ],
+                [
+                    'Spring Boot',
+                    65
+                ],
+                [
+                    'Spring MVC',
+                    65
+                ]
+            ]
+        }, {
+            name: 'JavaScript Technologies',
+            id: 'javascript',
+            data: [
+                [
+                    'Angular 1',
+                    90
+                ],
+                [
+                    'Angular 4',
+                    70
+                ],
+                [
+                    'Highcharts',
+                    60
+                ]
+            ]
+        }, {
+            name: 'HTML technologies',
+            id: 'html',
+            data: [
+                [
+                    'HTML 5',
+                    80
+                ],
+                [
+                    'CSS',
+                    75
+                ],
+                [
+                    'BootStrap',
+                    70
+                ]
+            ]
+        }]
+    }
+});
+</script>
+</html>

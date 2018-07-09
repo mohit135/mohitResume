@@ -1,0 +1,1 @@
+web: java -jar target/mohitmishra135-0.0.1-SNAPSHOT.jar
